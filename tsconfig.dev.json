@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": true,
+    "tsBuildInfoFile": ".tsconfig.dev.tsbuildinfo",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "esModuleInterop": true
+  },
+  "include": ["tests/**/*.ts"],
+  "exclude": ["jest.setup.ts", "node_modules", "dist"]
+}

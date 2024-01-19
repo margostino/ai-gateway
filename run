@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SCRIPT_PATH="$(
+  cd "$(dirname "$0")" >/dev/null 2>&1
+  pwd -P
+)"
+command=$1
+shift
+
+case ${command} in
+"encode-api-keys")
+  ./scripts/encode-api-keys.sh $@
+  ;;
+
+*)
+  echo 'Invalid command'
+  exit 1
+  ;;
+esac

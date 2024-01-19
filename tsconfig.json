@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Basic Options */
+    "outDir": "dist",
+    "rootDir": "./src",
+    "noEmit": false,
+    "incremental": true,
+    "declaration": false,
+    "isolatedModules": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    /* Compiler */
+    "target": "ES2021",
+    "lib": ["esnext"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "tsBuildInfoFile": ".tsconfig.tsbuildinfo",
+    "esModuleInterop": true,
+    "strict": true,
+
+    /* Advanced Options */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "coverage", "jest.config.js", "jest.setup.ts"]
+}

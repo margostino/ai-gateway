@@ -1,0 +1,28 @@
+[server]
+appPort = 8888
+adminPort = 8889
+
+[providers.openai]
+name = "openai"
+baseUrl = "https://mock.openai.com"
+tokenCountEnabled = true # unused for now
+
+[[providers.openai.routes]]
+path = "v1/models"
+method = "get"
+
+[[providers.openai.routes]]
+path = "v1/chat/completions"
+method = "post"
+
+[[providers.openai.routes]]
+path = "v1/embeddings"
+method = "post"
+
+[[providers.openai.routes]]
+path = "v1/fine_tuning/jobs"
+method = "post"
+
+[[providers.openai.routes]]
+path = "v1/images/generations"
+method = "post"

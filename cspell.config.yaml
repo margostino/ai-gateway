@@ -1,0 +1,41 @@
+language: en
+ignorePaths:
+  - ./.git
+  - ./node_modules
+  - ./*.log
+  - ./.*
+  - ./metadata.*.json
+  - ./nodemon.json
+  - ./tsconfig*
+  - ./yarn*
+  - ./Jenkinsfile*
+dictionaryDefinitions:
+  - name: ai
+    path: .cspell/dictionaries/ai.txt
+    description: AI Specific Words
+    addWords: true
+  - name: slack
+    path: .cspell/dictionaries/slack.txt
+    description: Slack Specific Words
+    addWords: true
+  - name: code
+    path: .cspell/dictionaries/code.txt
+    description: Code Specific Words
+    addWords: true
+dictionaries:
+  - en_US
+  - en-gb
+  - companies
+  - softwareTerms
+  - filetypes
+  - npm
+  - node
+  - typescript
+  - bash
+  # CUSTOM DICTIONARIES
+  - ai
+  - slack
+  - code
+words: []
+ignoreWords: []
+import: []

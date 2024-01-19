@@ -1,0 +1,4 @@
+/node_modules
+/dist
+/coverage
+/provision/secrets

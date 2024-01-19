@@ -1,0 +1,27 @@
+[server]
+appPort = 8080
+adminPort = 8081
+
+[providers.openai]
+name = "openai"
+baseUrl = "https://api.openai.com"
+headers = [
+  ""
+]
+[[providers.openai.routes]]
+path = "v1/models"
+method = "get"
+
+[[providers.openai.routes]]
+path = "v1/chat/completions"
+method = "post"
+
+[[providers.openai.routes]]
+path = "v1/embeddings"
+method = "post"
+
+[[providers.openai.routes]]
+path = "v1/images/generations"
+method = "post"
+
+
